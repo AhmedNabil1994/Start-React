@@ -1,0 +1,12 @@
+.bg {
+  background-color: var(--first-color);
+}
+nav .fz {
+  font-size: 32px;
+}
+
+.width {
+  width: fit-content;
+}
+
+

@@ -1,0 +1,8 @@
+:root {
+  --first-color: #2c3e50;
+  --second-color: #1a252f;
+  --third-color: #1abc9c;
+}
+.active {
+  background-color: var(--third-color);
+}
