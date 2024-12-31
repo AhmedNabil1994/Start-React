@@ -1,5 +1,5 @@
 import React from "react";
-import homeImg from "../../assets/avataaars.svg";
+import homeImg from "../../assets/Home/avataaars.svg";
 import style from "./home.module.css";
 import Title from "../Title/Title";
 

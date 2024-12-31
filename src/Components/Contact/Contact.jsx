@@ -5,9 +5,9 @@ import Title from "../Title/Title";
 export default function Contact() {
   return (
     <section className="py-5">
+      <Title title="contact section" color="#2c3e50" />
       <div className="container-fluid">
         <div className="row">
-          <Title title="contact section" color="#2c3e50" />
           <div className="col-md-6 mx-auto">
             <form className="form mt-5">
               <div className="row">

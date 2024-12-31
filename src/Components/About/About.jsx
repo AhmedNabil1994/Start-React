@@ -7,9 +7,9 @@ import Title from "../Title/Title";
 export default function About() {
   return (
     <section className={style.about}>
+      <Title title="about component" color="white" />
       <div className="container">
         <div className="row">
-          <Title title="about component" color="white" />
           <div className="col-md-6">
             <div className={`p-sm-0 ${style.pdLeft}`}>
               <p className="text-white">
