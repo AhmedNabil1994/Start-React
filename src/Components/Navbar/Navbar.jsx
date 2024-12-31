@@ -8,12 +8,9 @@ import { Container, Nav, Navbar as BsNavbar } from "react-bootstrap";
 
 export default function Navbar() {
   return (
-    <BsNavbar
-      expand="lg"
-      className={`${style.bg} text-uppercase fw-bold py-4`}
-    >
+    <BsNavbar expand="lg" className={`${style.bg} text-uppercase fw-bold py-4`}>
       <Container>
-        <BsNavbar.Brand as={Link} className={`text-white ${style.logo}`} to="">
+        <BsNavbar.Brand as={Link} className={`text-white  ${style.logo}`} to="">
           start framework
         </BsNavbar.Brand>
         <BsNavbar.Toggle aria-controls="basic-navbar-nav" />

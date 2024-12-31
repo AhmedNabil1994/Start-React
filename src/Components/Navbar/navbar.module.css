@@ -1,7 +1,7 @@
 .bg {
   background-color: var(--first-color);
 }
-nav .logo {
+.logo {
   font-size: 2rem;
 }
 
@@ -9,4 +9,8 @@ nav .logo {
   width: fit-content;
 }
 
-
+@media screen and (max-width: 430px) {
+  .logo {
+    font-size: 1rem;
+  }
+}
