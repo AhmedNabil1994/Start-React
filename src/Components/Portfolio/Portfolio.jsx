@@ -14,6 +14,10 @@ export default function Portfolio() {
   const handleCardClick = () => {
     setModalShow(true);
   };
+  const closeModal = () => {
+    setModalShow(false);
+  };
+
   return (
     <section className="pt-5 pb-4">
       <Title title="portfolio component" color="#2c3e50" />
@@ -23,24 +27,24 @@ export default function Portfolio() {
             <Card image={img1} num="1" onClick={() => handleCardClick()} />
           </div>
           <div className="col-md-6 col-lg-4">
-            <Card image={img2} num="2"onClick={() => handleCardClick()} />
+            <Card image={img2} num="2" onClick={() => handleCardClick()} />
           </div>
           <div className="col-md-6 col-lg-4">
-            <Card image={img3} num="3"onClick={() => handleCardClick()} />
+            <Card image={img3} num="3" onClick={() => handleCardClick()} />
           </div>
           <div className="col-md-6 col-lg-4">
-            <Card image={img1} num="1"onClick={() => handleCardClick()} />
+            <Card image={img1} num="1" onClick={() => handleCardClick()} />
           </div>
           <div className="col-md-6 col-lg-4">
             <Card image={img2} num="2" onClick={() => handleCardClick()} />
           </div>
           <div className="col-md-6 col-lg-4">
-            <Card image={img3} num="3" onClick={() => handleCardClick()}/>
+            <Card image={img3} num="3" onClick={() => handleCardClick()} />
           </div>
         </div>
       </div>
       {/* <PortfolioModal show={modalShow} /> */}
-      <Modal show={modalShow} />
+      <Modal show={modalShow} close={closeModal} />
     </section>
   );
 }
