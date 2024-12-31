@@ -9,7 +9,7 @@ export default function About() {
     <section className={style.about}>
       <div className="container">
         <div className="row">
-          <Title title="about component" />
+          <Title title="about component" color="white" />
           <div className="col-md-6">
             <div className={`p-sm-0 ${style.pdLeft}`}>
               <p className="text-white">

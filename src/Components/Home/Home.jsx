@@ -13,7 +13,7 @@ export default function Home() {
               <img src={homeImg} className={style.img} alt="home image" />
             </div>
           </div>
-          <Title title="start framework" />
+          <Title title="start framework" color="white" />
           <div className="col-12">
             <p className="text-white">
               Graphic Artist - Web Designer - Illustrator
