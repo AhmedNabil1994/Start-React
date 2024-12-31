@@ -1,6 +1,7 @@
 import React from "react";
 import homeImg from "../../assets/avataaars.svg";
 import style from "./home.module.css";
+import Title from "../Title/Title";
 
 export default function Home() {
   return (
@@ -12,16 +13,7 @@ export default function Home() {
               <img src={homeImg} className={style.img} alt="home image" />
             </div>
           </div>
-          <div className="col-12">
-            <h1 className={style.title}>start Framework</h1>
-          </div>
-          <div className="col-12">
-            <div className="my-3 d-flex justify-content-center align-items-center">
-              <div className={`me-3 ${style.line}`}></div>
-              <i className="fa fa-solid fa-star text-white"></i>
-              <div className={`ms-3 ${style.line}`}></div>
-            </div>
-          </div>
+          <Title title="start framework" />
           <div className="col-12">
             <p className="text-white">
               Graphic Artist - Web Designer - Illustrator
