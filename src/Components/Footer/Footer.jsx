@@ -1,9 +1,12 @@
 import React from "react";
-import "./footer.css";
+import style from "./footer.module.css";
+
 export default function Footer() {
   return (
-    <footer>
-      <h1 className="color">Footer</h1>
+    <footer className={`py-3 ${style.footer}`}>
+      <div className="container">
+        <p className="color">Copyright © Your Website 2021</p>
+      </div>
     </footer>
   );
 }
