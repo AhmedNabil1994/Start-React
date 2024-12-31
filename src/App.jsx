@@ -7,12 +7,17 @@ import About from "./Components/About/About";
 import Layout from "./Components/Layout/Layout";
 import Portfolio from "./Components/Portfolio/Portfolio";
 import Contact from "./Components/Contact/Contact";
+import Home from "./Components/Home/Home";
 
 const appRouter = createBrowserRouter([
   {
     path: "",
     element: <Layout />,
     children: [
+      {
+        path: "",
+        element: <Home />,
+      },
       {
         path: "about",
         element: <About />,

@@ -8,13 +8,12 @@ import { Container, Nav, Navbar as BsNavbar } from "react-bootstrap";
 
 export default function Navbar() {
   return (
-    <BsNavbar expand="lg" className={`${style.bg} text-uppercase fw-bold py-4`}>
+    <BsNavbar
+      expand="lg"
+      className={`${style.bg} text-uppercase fw-bold py-4`}
+    >
       <Container>
-        <BsNavbar.Brand
-          as={Link}
-          className={`text-white  ${style.fz}`}
-          to=""
-        >
+        <BsNavbar.Brand as={Link} className={`text-white ${style.logo}`} to="">
           start framework
         </BsNavbar.Brand>
         <BsNavbar.Toggle aria-controls="basic-navbar-nav" />
@@ -22,21 +21,21 @@ export default function Navbar() {
           <Nav className="ms-auto">
             <Nav.Link
               as={NavLink}
-              className={` px-2 mt-3 me-3 text-white rounded-3 ${style.width}`}
+              className={` px-2 mt-3 me-3 text-white rounded-3 ${style.navLink}`}
               to="about"
             >
               about
             </Nav.Link>
             <Nav.Link
               as={NavLink}
-              className={` px-2 mt-3 me-3 text-white rounded-3 ${style.width}`}
+              className={` px-2 mt-3 me-3 text-white rounded-3 ${style.navLink}`}
               to="portfolio"
             >
               portfolio
             </Nav.Link>
             <Nav.Link
               as={NavLink}
-              className={` px-2 mt-3 me-3 text-white rounded-3 ${style.width}`}
+              className={` px-2 mt-3 me-3 text-white rounded-3 ${style.navLink}`}
               to="contact"
             >
               contact

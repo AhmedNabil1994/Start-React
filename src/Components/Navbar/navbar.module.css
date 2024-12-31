@@ -1,11 +1,11 @@
 .bg {
   background-color: var(--first-color);
 }
-nav .fz {
-  font-size: 32px;
+nav .logo {
+  font-size: 2rem;
 }
 
-.width {
+.navLink {
   width: fit-content;
 }
 
