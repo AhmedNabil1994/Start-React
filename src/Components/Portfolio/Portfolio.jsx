@@ -11,8 +11,11 @@ import Modal from "../Modal/Modal";
 
 export default function Portfolio() {
   const [modalShow, setModalShow] = useState(false);
-  const handleCardClick = () => {
+  const [currentIMage, setCurrentIMage] = useState(null);
+
+  const handleCardClick = (image) => {
     setModalShow(true);
+    setCurrentIMage(image);
   };
   const closeModal = () => {
     setModalShow(false);
@@ -24,27 +27,27 @@ export default function Portfolio() {
       <div className="container">
         <div className="row g-5">
           <div className="col-md-6 col-lg-4">
-            <Card image={img1} num="1" onClick={() => handleCardClick()} />
+            <Card image={img1} num="1" onClick={() => handleCardClick(img1)} />
           </div>
           <div className="col-md-6 col-lg-4">
-            <Card image={img2} num="2" onClick={() => handleCardClick()} />
+            <Card image={img2} num="2" onClick={() => handleCardClick(img2)} />
           </div>
           <div className="col-md-6 col-lg-4">
-            <Card image={img3} num="3" onClick={() => handleCardClick()} />
+            <Card image={img3} num="3" onClick={() => handleCardClick(img3)} />
           </div>
           <div className="col-md-6 col-lg-4">
-            <Card image={img1} num="1" onClick={() => handleCardClick()} />
+            <Card image={img1} num="1" onClick={() => handleCardClick(img1)} />
           </div>
           <div className="col-md-6 col-lg-4">
-            <Card image={img2} num="2" onClick={() => handleCardClick()} />
+            <Card image={img2} num="2" onClick={() => handleCardClick(img2)} />
           </div>
           <div className="col-md-6 col-lg-4">
-            <Card image={img3} num="3" onClick={() => handleCardClick()} />
+            <Card image={img3} num="3" onClick={() => handleCardClick(img3)} />
           </div>
         </div>
       </div>
       {/* <PortfolioModal show={modalShow} /> */}
-      <Modal show={modalShow} close={closeModal} />
+      <Modal show={modalShow} close={closeModal} image={currentIMage} />
     </section>
   );
 }
