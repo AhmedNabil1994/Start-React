@@ -1,3 +1,4 @@
+// react hooks
 import React, { useState } from "react";
 // images
 import img1 from "../../assets/Portfolio/poert1.png";
@@ -15,7 +16,7 @@ export default function Portfolio() {
   // to avoid duplication of code (dry concept)
   const cardsUniqueImages = [img1, img2, img3];
   const cardsAllImages = [...cardsUniqueImages, ...cardsUniqueImages];
-
+  
   const handleCardClick = (image) => {
     setModalShow(true);
     setCurrentIMage(image);

@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+// react hooks
+import React, { useState, useEffect } from "react";
 // libraries
 import { Link, NavLink } from "react-router-dom";
 // css
@@ -8,11 +9,23 @@ import { Container, Nav, Navbar as BsNavbar } from "react-bootstrap";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
-  
-  const handleScroll = () => {
-    window.scrollY > 50 ? setIsScrolled(true) : setIsScrolled(false);
-  };
-  window.addEventListener("scroll", handleScroll);
+  /* 
+    wrap it in useeffect hook to inhance performance
+    avoid multi-listener-calling at every render 
+      --when update state for example
+    also cleanup the listener when component unmount
+  */
+  useEffect(() => {
+    // didMount
+    const handleScroll = () => {
+      window.scrollY > 50 ? setIsScrolled(true) : setIsScrolled(false);
+    };
+    window.addEventListener("scroll", handleScroll);
+    // didUnMount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <BsNavbar
