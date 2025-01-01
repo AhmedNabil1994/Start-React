@@ -14,22 +14,16 @@ export default function Info() {
           <div className="col-md-4">
             <h2 className="h3">AROUND THE WEB</h2>
             <div className="icons">
-              <span className="fa-stack ms-2" style={{ verticalAlign: "top" }}>
-                <i className="fa-regular fa-circle fa-stack-2x"></i>
-                <i className="fa-brands fa-facebook fa-1x"></i>
-              </span>
-              <span className="fa-stack ms-2" style={{ verticalAlign: "top" }}>
-                <i className="fa-regular fa-circle fa-stack-2x"></i>
-                <i className="fa-brands fa-twitter fa-1x"></i>
-              </span>
-              <span className="fa-stack ms-2" style={{ verticalAlign: "top" }}>
-                <i className="fa-regular fa-circle fa-stack-2x"></i>
-                <i className="fa-brands fa-linkedin-in fa-1x"></i>
-              </span>
-              <span className="fa-stack ms-2" style={{ verticalAlign: "top" }}>
-                <i className="fa-regular fa-circle fa-stack-2x"></i>
-                <i className="fa-solid fa-globe fa-1x"></i>
-              </span>
+              <i
+                className={`${style.icon} mx-1 fa-brands fa-facebook fa-1x`}
+              ></i>
+              <i
+                className={`${style.icon} mx-1 fa-brands fa-twitter fa-1x`}
+              ></i>
+              <i
+                className={`${style.icon} mx-1 fa-brands fa-linkedin-in fa-1x`}
+              ></i>
+              <i className={`${style.icon} mx-1 fa-solid fa-globe fa-1x`}></i>
             </div>
           </div>
           <div className="col-md-4">

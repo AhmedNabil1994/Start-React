@@ -2,18 +2,22 @@
   cursor: pointer;
   position: relative;
   transition: opacity 0.5s;
-}
-.icon {
-  position: absolute;
-  inset: 0;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: inherit;
-}
-.card:hover .icon {
-  background-color: var(--third-color);
-  opacity: 0.9;
+  .img {
+    border-radius: inherit;
+  }
+  .icon {
+    position: absolute;
+    inset: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: inherit;
+    border-radius: inherit;
+  }
+  &:hover .icon {
+    background-color: var(--third-color);
+    opacity: 0.9;
+  }
 }
