@@ -4,7 +4,7 @@ import Title from "../Title/Title";
 
 export default function Contact() {
   return (
-    <section className="py-5">
+    <section className="py-5" style={{ marginTop: "106px" }}>
       <Title title="contact section" color="#2c3e50" />
       <div className="container-fluid">
         <div className="row">

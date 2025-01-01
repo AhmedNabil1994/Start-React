@@ -6,7 +6,7 @@ import Title from "../Title/Title";
 
 export default function About() {
   return (
-    <section className={style.about}>
+    <section className={style.about} style={{ marginTop: "106px" }}>
       <Title title="about component" color="white" />
       <div className="container">
         <div className="row">

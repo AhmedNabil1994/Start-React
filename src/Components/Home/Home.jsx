@@ -5,7 +5,10 @@ import Title from "../Title/Title";
 
 export default function Home() {
   return (
-    <section className={`text-center py-5 ${style.bg}`}>
+    <section
+      className={`text-center py-5 ${style.bg}`}
+      style={{ marginTop: "106px" }}
+    >
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-12">

@@ -24,7 +24,7 @@ export default function Portfolio() {
   };
 
   return (
-    <section className="pt-5 pb-4">
+    <section className="pt-5 pb-4" style={{ marginTop: "106px" }}>
       <Title title="portfolio component" color="#2c3e50" />
       <div className="container">
         <div className="row g-5">

@@ -2,6 +2,7 @@
   background-color: var(--third-color);
   padding-block: 8.125rem;
 }
+
 @media screen and (min-width: 992px) {
   .pdRight {
     padding-right: 5rem !important;
