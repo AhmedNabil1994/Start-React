@@ -1,7 +1,7 @@
 // libraries
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { useState, useEffect } from "react";
-// app components
+// child components
 import About from "./Components/About/About";
 import Layout from "./Components/Layout/Layout";
 import Portfolio from "./Components/Portfolio/Portfolio";

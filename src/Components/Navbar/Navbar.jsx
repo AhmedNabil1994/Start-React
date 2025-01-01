@@ -1,8 +1,7 @@
-// react hooks
-import React, { useState, useEffect } from "react";
 // libraries
+import React, { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
-// css
+// css file
 import style from "./navbar.module.css";
 // bs components
 import { Container, Nav, Navbar as BsNavbar } from "react-bootstrap";

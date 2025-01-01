@@ -1,4 +1,6 @@
+// libraries
 import React from "react";
+// css file
 import style from "./info.module.css";
 
 export default function Info() {

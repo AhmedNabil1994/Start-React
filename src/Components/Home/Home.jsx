@@ -1,6 +1,10 @@
+// libraries
 import React, { useEffect } from "react";
-import homeImg from "../../assets/Home/avataaars.svg";
+// css file
 import style from "./home.module.css";
+// images
+import homeImg from "../../assets/Home/avataaars.svg";
+// child components
 import Title from "../Title/Title";
 
 export default function Home({ pageTitle, setTitle }) {

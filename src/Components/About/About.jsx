@@ -1,8 +1,9 @@
+// libraries
 import React, { useEffect } from "react";
 // css file
 import style from "./about.module.css";
+// child components
 import Title from "../Title/Title";
-// comonents
 
 export default function About({ pageTitle, setTitle }) {
   useEffect(() => {

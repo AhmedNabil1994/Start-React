@@ -1,7 +1,7 @@
-import React from "react";
 // libraries
+import React from "react";
 import { Outlet } from "react-router-dom";
-// app components
+// child components
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import Info from "../Info/Info";

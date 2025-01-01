@@ -1,4 +1,4 @@
-// react hooks
+// libraries
 import React, { useEffect, useState } from "react";
 // images
 import img1 from "../../assets/Portfolio/poert1.png";

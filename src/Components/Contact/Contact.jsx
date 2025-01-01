@@ -1,5 +1,8 @@
+// libraries
 import React, { useEffect } from "react";
+// css file
 import style from "./contact.module.css";
+// child components
 import Title from "../Title/Title";
 
 export default function Contact({ pageTitle, setTitle }) {

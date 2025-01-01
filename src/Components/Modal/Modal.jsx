@@ -1,5 +1,6 @@
-// import React from "react";
-// import img from "../../assets/Portfolio/poert1.png";
+// libraries
+import React from "react";
+// css file
 import style from "./modal.module.css";
 
 export default function Modal({ show, close, image }) {

@@ -1,5 +1,8 @@
+// libraries
 import React, { useEffect } from "react";
+// css file
 import style from "./notFound.module.css";
+
 export default function NotFound({ pageTitle, setTitle }) {
   useEffect(() => {
     setTitle(pageTitle);

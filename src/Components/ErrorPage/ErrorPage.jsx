@@ -1,7 +1,8 @@
+// libraries
 import React from "react";
-// css files
-import style from "./errorPage.module.css";
 import { Link } from "react-router-dom";
+// css file
+import style from "./errorPage.module.css";
 
 export default function ErrorPage() {
   return (
