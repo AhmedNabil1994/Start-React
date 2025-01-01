@@ -8,6 +8,7 @@ import Portfolio from "./Components/Portfolio/Portfolio";
 import Contact from "./Components/Contact/Contact";
 import Home from "./Components/Home/Home";
 import NotFound from "./Components/NotFound/NotFound";
+import ErrorPage from "./Components/ErrorPage/ErrorPage";
 
 function App() {
   const [title, setTitle] = useState("Home");
@@ -15,6 +16,7 @@ function App() {
     {
       path: "",
       element: <Layout />,
+      errorElement: <ErrorPage />,
       children: [
         {
           path: "",

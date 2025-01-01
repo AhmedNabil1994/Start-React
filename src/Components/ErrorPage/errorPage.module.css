@@ -1,0 +1,15 @@
+.error {
+  text-align: center;
+  font-weight: bold;
+  text-transform: capitalize;
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.anchor:hover {
+  color: #0d6efd;
+}
