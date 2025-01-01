@@ -31,8 +31,8 @@ export default function Portfolio({ pageTitle, setTitle }) {
   return (
     <section className="pt-5 pb-4" style={{ marginTop: "106px" }}>
       <Title title="portfolio component" color="#2c3e50" />
-      <div className="container overflow-hidden">
-        <div className="row g-5">
+      <div className="container">
+        <div className="row g-4">
           {cardsAllImages.map((cardImage, idx) => (
             <Card
               key={idx}
