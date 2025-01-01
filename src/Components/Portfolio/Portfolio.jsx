@@ -1,5 +1,5 @@
 // react hooks
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 // images
 import img1 from "../../assets/Portfolio/poert1.png";
 import img2 from "../../assets/Portfolio/port2.png";
@@ -10,13 +10,13 @@ import Title from "../Title/Title";
 import Card from "../Card/Card";
 import Modal from "../Modal/Modal";
 
-export default function Portfolio() {
+export default function Portfolio({ pageTitle, setTitle }) {
   const [modalShow, setModalShow] = useState(false);
   const [currentIMage, setCurrentIMage] = useState(null);
   // to avoid duplication of code (dry concept)
   const cardsUniqueImages = [img1, img2, img3];
   const cardsAllImages = [...cardsUniqueImages, ...cardsUniqueImages];
-  
+
   const handleCardClick = (image) => {
     setModalShow(true);
     setCurrentIMage(image);
@@ -24,6 +24,9 @@ export default function Portfolio() {
   const closeModal = () => {
     setModalShow(false);
   };
+  useEffect(() => {
+    setTitle(pageTitle);
+  }, []);
 
   return (
     <section className="pt-5 pb-4" style={{ marginTop: "106px" }}>

@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import style from "./contact.module.css";
 import Title from "../Title/Title";
 
-export default function Contact() {
+export default function Contact({ pageTitle, setTitle }) {
+  useEffect(() => {
+    setTitle(pageTitle);
+  }, []);
+
   return (
     <section className="py-5" style={{ marginTop: "106px" }}>
       <Title title="contact section" color="#2c3e50" />

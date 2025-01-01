@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 // css file
 import style from "./about.module.css";
 import Title from "../Title/Title";
 // comonents
 
-export default function About() {
+export default function About({ pageTitle, setTitle }) {
+  useEffect(() => {
+    setTitle(pageTitle);
+  }, []);
+
   return (
     <section className={style.about} style={{ marginTop: "106px" }}>
       <Title title="about component" color="white" />

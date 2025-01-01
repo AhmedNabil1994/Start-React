@@ -1,6 +1,6 @@
 .info {
     background-color: var(--first-color);
     color: white;
-    padding-block: 5rem;
+    padding: 6rem 0 5rem 0;
     text-align: center;
 }

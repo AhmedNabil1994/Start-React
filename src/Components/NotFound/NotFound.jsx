@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import style from "./notFound.module.css";
-export default function NotFound() {
+export default function NotFound({ pageTitle, setTitle }) {
+  useEffect(() => {
+    setTitle(pageTitle);
+  }, []);
+
   return (
     <section style={{ marginTop: "106px" }} className={style.notFound}>
       <div className="container">

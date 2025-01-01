@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import homeImg from "../../assets/Home/avataaars.svg";
 import style from "./home.module.css";
 import Title from "../Title/Title";
 
-export default function Home() {
+export default function Home({ pageTitle, setTitle }) {
+  useEffect(() => {
+    setTitle(pageTitle);
+  }, []);
+
   return (
     <section
       className={`text-center py-5 ${style.bg}`}
