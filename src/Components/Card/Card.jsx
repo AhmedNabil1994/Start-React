@@ -6,11 +6,13 @@ import { Card as BsCard } from "react-bootstrap";
 
 export default function Card({ image, num, onClick }) {
   return (
-    <BsCard className={style.card} onClick={onClick}>
-      <BsCard.Img variant="top" src={image} alt={`image-${num}`} />
-      <div className={style.icon}>
-        <i className="fa-solid fa-plus fa-6x"></i>
-      </div>
-    </BsCard>
+    <div className="col-md-6 col-lg-4">
+      <BsCard className={style.card} onClick={onClick}>
+        <BsCard.Img variant="top" src={image} alt={`image-${num}`} />
+        <div className={style.icon}>
+          <i className="fa-solid fa-plus fa-6x"></i>
+        </div>
+      </BsCard>
+    </div>
   );
 }

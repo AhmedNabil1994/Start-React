@@ -34,13 +34,12 @@ export default function Portfolio({ pageTitle, setTitle }) {
       <div className="container">
         <div className="row g-5">
           {cardsAllImages.map((cardImage, idx) => (
-            <div className="col-md-6 col-lg-4" key={idx}>
-              <Card
-                image={cardImage}
-                num={idx + 1}
-                onClick={() => handleCardClick(cardImage)}
-              />
-            </div>
+            <Card
+              key={idx}
+              image={cardImage}
+              num={idx + 1}
+              onClick={() => handleCardClick(cardImage)}
+            />
           ))}
         </div>
       </div>
