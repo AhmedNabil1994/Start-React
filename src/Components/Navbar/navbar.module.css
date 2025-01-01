@@ -1,5 +1,6 @@
-.bg {
+.nav {
   background-color: var(--first-color);
+  transition: padding 0.6s;
 }
 .logo {
   font-size: 2rem;
