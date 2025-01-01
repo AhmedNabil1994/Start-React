@@ -1,0 +1,6 @@
+.notFound {
+  padding-block: 6.25rem;
+  text-align: center;
+  font-weight: bold;
+  text-transform: capitalize;
+}

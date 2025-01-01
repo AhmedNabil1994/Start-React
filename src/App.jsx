@@ -6,6 +6,7 @@ import Layout from "./Components/Layout/Layout";
 import Portfolio from "./Components/Portfolio/Portfolio";
 import Contact from "./Components/Contact/Contact";
 import Home from "./Components/Home/Home";
+import NotFound from "./Components/NotFound/NotFound";
 
 const appRouter = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const appRouter = createBrowserRouter([
       {
         path: "contact",
         element: <Contact />,
+      },
+      {
+        path: "*",
+        element: <NotFound />,
       },
     ],
   },
