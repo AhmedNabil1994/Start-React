@@ -1,6 +1,5 @@
 // libraries
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { useState, useEffect } from "react";
 // child components
 import About from "./Components/About/About";
 import Layout from "./Components/Layout/Layout";
@@ -20,27 +19,27 @@ const appRouter = createBrowserRouter([
     children: [
       {
         path: "",
-        element: <Home pageTitle={"Home"} />,
+        element: <Home />,
       },
       {
         path: "home",
-        element: <Home pageTitle={"Home"} />,
+        element: <Home />,
       },
       {
         path: "about",
-        element: <About pageTitle={"About"} />,
+        element: <About />,
       },
       {
         path: "portfolio",
-        element: <Portfolio pageTitle={"Portfolio"} />,
+        element: <Portfolio />,
       },
       {
         path: "contact",
-        element: <Contact pageTitle={"Contact"} />,
+        element: <Contact />,
       },
       {
         path: "*",
-        element: <NotFound pageTitle={"404"} />,
+        element: <NotFound />,
       },
     ],
   },
@@ -48,7 +47,7 @@ const appRouter = createBrowserRouter([
 
 function App() {
   return (
-    <TitleProvider>
+    <TitleProvider >
       <RouterProvider router={appRouter} />
     </TitleProvider>
   );
