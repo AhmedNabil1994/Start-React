@@ -1,18 +1,22 @@
 // libraries
-import React, { useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 // css file
 import style from "./about.module.css";
 // child components
 import Title from "../Title/Title";
+// context
+import { TitleContext } from "../../context/TitleContext";
 
-export default function About({ pageTitle, setTitle }) {
+export default function About() {
+  const { title, setTitle } = useContext(TitleContext);
+
   useEffect(() => {
-    setTitle(pageTitle);
+    setTitle("About");
   }, []);
 
   return (
     <section className={style.about} style={{ marginTop: "106px" }}>
-      <Title title="about component" color="white" />
+      <Title title={`${title} component`} color="white" />
       <div className="container">
         <div className="row">
           <div className="col-md-6">

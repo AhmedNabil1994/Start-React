@@ -1,15 +1,20 @@
 // libraries
-import React, { useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 // css file
 import style from "./home.module.css";
 // images
 import homeImg from "../../assets/Home/avataaars.svg";
 // child components
 import Title from "../Title/Title";
+// context
+import { TitleContext } from "../../context/TitleContext";
 
-export default function Home({ pageTitle, setTitle }) {
+export default function Home() {
+  // use the setter from the created context
+  const { setTitle } = useContext(TitleContext);
+  
   useEffect(() => {
-    setTitle(pageTitle);
+    setTitle("Home");
   }, []);
 
   return (

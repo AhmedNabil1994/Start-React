@@ -1,18 +1,22 @@
 // libraries
-import React, { useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 // css file
 import style from "./contact.module.css";
 // child components
 import Title from "../Title/Title";
+// context
+import { TitleContext } from "../../context/TitleContext";
 
-export default function Contact({ pageTitle, setTitle }) {
+export default function Contact() {
+  const { title, setTitle } = useContext(TitleContext);
+
   useEffect(() => {
-    setTitle(pageTitle);
+    setTitle("Contact");
   }, []);
 
   return (
     <section className="py-5" style={{ marginTop: "106px" }}>
-      <Title title="contact section" color="#2c3e50" />
+      <Title title={`${title} section`} color="#2c3e50" />
       <div className="container-fluid">
         <div className="row">
           <div className="col-md-6 mx-auto">
