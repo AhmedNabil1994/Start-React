@@ -7,7 +7,7 @@ export const TitleContext = createContext();
 // create the provider
 export default function TitleProvider({ children }) {
   const [title, setTitle] = useState("Home");
-
+  
   /* 
     set the title when changes
     component did update

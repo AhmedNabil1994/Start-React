@@ -13,3 +13,16 @@
   box-shadow: none;
   border-color: #dee2e6;
 }
+.label {
+  color: var(--third-color);
+  transition: all 0.5s;
+  position: relative;
+}
+.show {
+  opacity: 1;
+  top: 0;
+}
+.hide {
+  top: 50px;
+  opacity: 0;
+}
