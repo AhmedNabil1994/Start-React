@@ -9,7 +9,7 @@ import { TitleContext } from "../../context/TitleContext";
 
 export default function Contact() {
   const { title, setTitle } = useContext(TitleContext);
-  const [labelStates, setLabelStates] = useState({});
+  const [labelsState, setLabelsState] = useState({});
 
   useEffect(() => {
     setTitle("Contact");
@@ -18,7 +18,7 @@ export default function Contact() {
     console.log("work");
     
     // implicit distructuring of id and value
-    setLabelStates((prev) => ({
+    setLabelsState((prev) => ({
       ...prev,
       /* 
         object key based of name of input id
@@ -42,7 +42,7 @@ export default function Contact() {
                   <div className="mb-5">
                     <label
                       className={`${style.label} ${
-                        labelStates.userName ? style.show : style.hide
+                        labelsState.userName ? style.show : style.hide
                       }`}
                       htmlFor="userName"
                     >
@@ -66,7 +66,7 @@ export default function Contact() {
                   <div className="mb-5">
                     <label
                       className={`${style.label} ${
-                        labelStates.userAge ? style.show : style.hide
+                        labelsState.userAge ? style.show : style.hide
                       }`}
                       htmlFor="userAge"
                     >
@@ -85,7 +85,7 @@ export default function Contact() {
                   <div className="mb-5">
                     <label
                       className={`${style.label} ${
-                        labelStates.userEmail ? style.show : style.hide
+                        labelsState.userEmail ? style.show : style.hide
                       }`}
                       htmlFor="userEmail"
                     >
@@ -104,7 +104,7 @@ export default function Contact() {
                   <div className="mb-5">
                     <label
                       className={`${style.label} ${
-                        labelStates.userPassword ? style.show : style.hide
+                        labelsState.userPassword ? style.show : style.hide
                       }`}
                       htmlFor="userPassword"
                     >
