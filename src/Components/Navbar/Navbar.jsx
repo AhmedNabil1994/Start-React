@@ -34,7 +34,7 @@ export default function Navbar() {
       }`}
     >
       <Container>
-        <BsNavbar.Brand as={Link} className={`text-white  ${style.logo}`} to="">
+        <BsNavbar.Brand as={Link} className={`text-white  ${style.logo}`} to="/">
           start framework
         </BsNavbar.Brand>
         <BsNavbar.Toggle aria-controls="basic-navbar-nav" />

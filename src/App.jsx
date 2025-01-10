@@ -18,11 +18,7 @@ const appRouter = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "",
-        element: <Home />,
-      },
-      {
-        path: "home",
+        index: true,
         element: <Home />,
       },
       {
@@ -47,7 +43,7 @@ const appRouter = createBrowserRouter([
 
 function App() {
   return (
-    <TitleProvider >
+    <TitleProvider>
       <RouterProvider router={appRouter} />
     </TitleProvider>
   );

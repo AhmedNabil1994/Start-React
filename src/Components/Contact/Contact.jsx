@@ -52,7 +52,7 @@ export default function Contact() {
                     /* 
                       onChange={(e)=>handleChannge(e)} works but
                       the below more clean and no need to pass
-                      evebt object
+                      event object
                     */ 
                       onChange={handleChannge}
                       type="text"
