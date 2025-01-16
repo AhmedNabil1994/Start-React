@@ -1,5 +1,5 @@
 // libraries
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, createHashRouter, RouterProvider } from "react-router-dom";
 // child components
 import About from "./Components/About/About";
 import Layout from "./Components/Layout/Layout";
@@ -11,7 +11,7 @@ import ErrorPage from "./Components/ErrorPage/ErrorPage";
 // provider component
 import TitleProvider from "./context/TitleContext";
 
-const appRouter = createBrowserRouter([
+const appRouter = createHashRouter([
   {
     path: "",
     element: <Layout />,
